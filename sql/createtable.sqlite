@@ -1,0 +1,34 @@
+CREATE TABLE friends (
+   id INTEGER,
+   name TEXT,
+   birthday DATE
+);
+
+INSERT INTO friends(id, name, birthday)
+VALUES (1, 'Ororo Munroe', '1940-05-30');
+
+SELECT * 
+FROM friends;
+
+INSERT INTO friends(id, name, birthday)
+VALUES (2, 'BFF1', '1945-05-30');
+
+INSERT INTO friends(id, name, birthday)
+VALUES (3, 'BFF2', '1948-05-30');
+
+SELECT *
+FROM friends;
+
+UPDATE friends
+SET name ='Beber'
+WHERE id = 1;
+
+SELECT *
+FROM friends;
+
+PDATE friends
+SET name ='Beber'
+WHERE id = 1;
+
+ALTER TABLE friends
+ADD COLUMN email TEXT;
